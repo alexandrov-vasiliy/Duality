@@ -17,7 +17,7 @@ namespace _Game.Crime
         [SerializeField] private Light[] lights;
 
         [Header("Intensity")]
-        [SerializeField, Min(0f)] private float baseIntensity = 0.8f;
+        [SerializeField, Min(0f)] private float baseIntensity = 1f;
         [SerializeField, Min(0f)] private float overloadIntensity = 3f;
 
         [Header("Timing")]

@@ -7,6 +7,8 @@ namespace _Game
     {
         [SerializeField] private MMF_Player openDoor;
         [SerializeField] private MMF_Player closeDoor;
+        [SerializeField] private MMF_Player mercyBtn;
+        [SerializeField] private MMF_Player free;
 
         public void PlayOpenDoor()
         {
@@ -18,6 +20,15 @@ namespace _Game
             closeDoor.PlayFeedbacks();
         }
 
+        public void PlayBtn()
+        {
+            mercyBtn.PlayFeedbacks();
+        }
+
+        public void PlayFree()
+        {
+            free.PlayFeedbacks();
+        }
     
     }
 }

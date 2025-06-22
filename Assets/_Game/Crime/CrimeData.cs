@@ -18,7 +18,7 @@ namespace _Game.Crime
         public int Age;
         public Gender Gender;
         public string BodyType;
-        public GameObject ModelPrefab;
+        public Material ModelMaterial;
     }
 
     [Serializable]

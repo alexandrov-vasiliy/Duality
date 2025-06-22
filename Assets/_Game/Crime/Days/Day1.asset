@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day1
   m_EditorClassIdentifier: 
+  additionalEvent: 1
+  lawsText: "1. \u0417\u0430 \u043F\u0440\u0438\u0447\u0435\u043D\u0435\u043D\u0438\u044F
+    \u0443\u0449\u0435\u0440\u0431\u0430 \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u043C\u0443
+    \u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0443 - <color=\"red\">\u043A\u0430\u0437\u043D\u044C</color>\\n\n2.
+    \u041F\u0440\u043E\u0434\u0430\u0436\u0430 \u043D\u0430\u0440\u043A\u043E\u0442\u0438\u043A\u043E\u0432
+    \u0432 \u043B\u044E\u0431\u043E\u043C \u043E\u0431\u044A\u0435\u043C\u0435 -<color=\"red\">
+    \u043A\u0430\u0437\u043D\u044C</color>\\n\n3. \u0420\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u0438\u0435
+    \u043A\u043B\u0435\u0432\u0435\u0442\u044B - <color=\"red\">\u043A\u0430\u0437\u043D\u044C</color>\\n"
   crime:
     Subject:
-      FullName: Evgenie
+      FullName: Ilia
       Age: 21
       Gender: 0
-      BodyType: Negroid
-      ModelPrefab: {fileID: 919132149155446097, guid: a9f670f4eae962b4683c35ae3d1db878, type: 3}
+      BodyType: White
+      ModelMaterial: {fileID: 2100000, guid: d19a2cb68ef012f478bbc70ed1010f9d, type: 2}
     CrimeDescription: 'Rape of cattle with a fatal outcome.
 
 '
@@ -36,3 +44,6 @@ MonoBehaviour:
   endText:
     executeText: "\u041D\u0430\u0440\u043A\u043E\u043C\u0430\u0444\u0438\u044F \u0440\u0430\u0441\u0442\u0435\u0442"
     mercyText: "\u041D\u0430\u0440\u043A\u043E\u043C\u0430\u0444\u0438\u044F \u0443\u0433\u0430\u0441\u0430\u0435\u0442"
+  DamageDatas:
+  - name: Wife
+    health: 30

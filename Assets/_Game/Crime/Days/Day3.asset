@@ -12,21 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day3
   m_EditorClassIdentifier: 
+  lawsText: 
   crime:
-    Person:
-      fio: 
-      age: 
-      gender: 0
-      bodyType: 
-      personPrefab: {fileID: 6329710300226403676, guid: e5f8761fef0dda64fbc11fb7150b746d, type: 3}
-    Description: 
-    investigation: 
-    Proofs: 
-    Evidence: 
-    EvidencePrefabs: []
+    Subject:
+      FullName: Chog Ching
+      Age: 67
+      Gender: 0
+      BodyType: Ching Chong
+      ModelMaterial: {fileID: 2100000, guid: c89f5daa40673204d8403d1cfa7da190, type: 2}
+    CrimeDescription: "\u041F\u0440\u043E\u0434\u0430\u0432\u0430\u043B \u043D\u0430\u0440\u043A\u043E\u0442\u0438\u043A\u0438"
+    InvestigationNotes: "\u0412 \u0441\u0443\u043C\u043A\u0430\u0445 \u043D\u0430\u0439\u0434\u0435\u043D\u044B
+      \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430 \u043F\u043E \u044D\u043A\u0441\u043F\u0435\u0440\u0442\u0438\u0437\u0435 "
+    ProofSummaries: 
+    EvidenceSummary: 
+    EvidenceModels:
+    - {fileID: -927199367670048503, guid: 29093db279d5d0540b9a25a9d7355362, type: 3}
   consequences:
-    executeText: 
-    mercyText: 
+    executeText: "\u0420\u0430\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435
+      \u0436\u0443\u0440\u043D\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u043E
+      \u0447\u0442\u043E \u043E\u043D \u0431\u044B\u043B \u043D\u0435\u0432\u0438\u043D\u043E\u0432\u0435\u043D"
+    mercyText: "\u0420\u0430\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435
+      \u0436\u0443\u0440\u043D\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u043E
+      \u0447\u0442\u043E \u043E\u043D \u0431\u044B\u043B \u043D\u0435\u0432\u0438\u043D\u043E\u0432\u0435\u043D"
   endText:
     executeText: 
     mercyText: 
+  DamageDatas:
+  - name: Son
+    health: 30

@@ -1,9 +1,8 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 namespace _Game.Clipboard
 {
-    using UnityEngine;
-    using DG.Tweening;
 
     public class FolderPickup : MonoBehaviour
     {
@@ -14,7 +13,7 @@ namespace _Game.Clipboard
 
         private Vector3 _originalPosition;
         private Quaternion _originalRotation;
-        private bool _isPickedUp;
+        public bool isPickedUp { private set; get; }
 
         private void Awake()
         {
@@ -26,7 +25,7 @@ namespace _Game.Clipboard
         private void OnMouseDown()
         {
             // По клику то поднимаем, то возвращаем
-            if (!_isPickedUp)
+            if (!isPickedUp)
                 PickUp();
             else
                 ReturnToOriginal();
@@ -37,7 +36,7 @@ namespace _Game.Clipboard
         /// </summary>
         public void PickUp()
         {
-            _isPickedUp = true;
+            isPickedUp = true;
             // Перемещаем и вращаем по DOTween
             transform.DOMove(handTarget.position, moveDuration)
                 .SetEase(moveEase);
@@ -50,7 +49,7 @@ namespace _Game.Clipboard
         /// </summary>
         public void ReturnToOriginal()
         {
-            _isPickedUp = false;
+            isPickedUp = false;
             transform.DOMove(_originalPosition, moveDuration)
                 .SetEase(moveEase);
             transform.DORotateQuaternion(_originalRotation, moveDuration)

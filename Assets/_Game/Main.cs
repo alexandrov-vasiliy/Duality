@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace _Game
@@ -8,6 +7,9 @@ namespace _Game
         public AudioSource sfxAudio; 
         private void Start()
         {
+            G.ui.HideLaws();
+            G.DayEndView.Close();
+            G.FamilyView.Close();
             G.crimeInitializator.InitDay();
         }
     }

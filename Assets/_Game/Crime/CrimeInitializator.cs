@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -24,6 +25,8 @@ namespace _Game.Crime
         
         private List<GameObject> spawnedEvidence = new List<GameObject>();
 
+        public event Action newDay; 
+
         public void NextDay()
         {
             G.FamilyView.continuePressed = false;
@@ -46,6 +49,7 @@ namespace _Game.Crime
 
         public void InitDay()
         {
+            newDay?.Invoke();
             Debug.Log(currentDay.crime.Subject.FullName);
             if (currentDay.crime.Subject.Gender == Gender.Male)
             {

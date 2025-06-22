@@ -23,6 +23,8 @@ namespace _Game.Crime
         public ChoiceText endText;
 
         public List<FamilyMemeber> DamageDatas;
+
+        public List<Dialogue> Dialogues;
     }
 
     [Serializable]
@@ -30,6 +32,19 @@ namespace _Game.Crime
     {
         [TextArea] public string executeText;
         [TextArea] public string mercyText;
+    }
+
+    public enum Speaker
+    {
+        Subject,
+        Executor
+    }
+
+    [Serializable]
+    public class Dialogue
+    {
+        [TextArea] public string text;
+        public Speaker Speaker;
     }
 }
 

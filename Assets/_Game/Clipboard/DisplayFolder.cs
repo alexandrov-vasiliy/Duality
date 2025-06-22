@@ -67,10 +67,7 @@ namespace _Game.Clipboard
         private string BuildBody(CaseFile c)
         {
             return
-                $"CRIME DESCRIPTION:\n{c.CrimeDescription}\n" +
-                $"INVESTIGATION:\n{c.InvestigationNotes}\n" +
-                $"PROOFS:\n{c.ProofSummaries}\n" +
-                $"EVIDENCE:\n{c.EvidenceSummary}";
+                $"CRIME DESCRIPTION:\n{c.CrimeDescription}";
         }
     }
 }

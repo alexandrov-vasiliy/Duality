@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BribeEvent : MonoBehaviour
 {
-    [SerializeField] private int bribeAmount = 50;
+    [SerializeField] private int bribeAmount = 60;
     [SerializeField] private Transform bribeSpawnPoint;
     [SerializeField] private GameObject bribePrefab;
 
@@ -19,7 +19,7 @@ public class BribeEvent : MonoBehaviour
 
     public void RemoveBribe()
     {
-        G.RunState.reward -= bribeAmount;
+        G.RunState.rewardMercy -= bribeAmount;
         if (spawnedBribe != null)
         {
             Destroy(spawnedBribe);

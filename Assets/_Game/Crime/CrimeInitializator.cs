@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace _Game.Crime
 {
@@ -39,8 +40,7 @@ namespace _Game.Crime
             
             if (currentDayIndex >= Days.Count)
             {
-                currentDayIndex = 0;
-                InitDay();
+                SceneManager.LoadScene(1);
                 return;
             }
             currentDayIndex++;

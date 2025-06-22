@@ -28,12 +28,12 @@ public class Micro : MonoBehaviour
 
     private void OnEnable()
     {
-        G.crimeInitializator.newDay += Clear;
+        G.crimeInitializator.newDay += HandleNewDay;
     }
 
     private void OnDisable()
     {
-        G.crimeInitializator.newDay -= Clear;
+        G.crimeInitializator.newDay -= HandleNewDay;
     }
 
     private void OnMouseDown()
@@ -85,6 +85,7 @@ public class Micro : MonoBehaviour
     private IEnumerator SpawnPairCoroutine()
     {
         _isSpawningPair = true;
+        G.feel.PlayMicro();
 
         int toSpawn = Mathf.Min(2, _dialogues.Count - _index);
         for (int i = 0; i < toSpawn; i++)
@@ -125,8 +126,12 @@ public class Micro : MonoBehaviour
         _isSpawningPair = false;
     }
 
-    public void Clear()
+    public void HandleNewDay()
     {
+        _index = 0;
+
+        _dialogues = G.crimeInitializator.currentDay.Dialogues;
+
         foreach (Transform child in dialogueContainer)
         {
             Destroy(child.gameObject);

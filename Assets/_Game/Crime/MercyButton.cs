@@ -43,6 +43,8 @@ namespace _Game.Crime
 
         private void OnMouseDown()
         {
+            if(G.RunState.isBlocked) return;
+
             _isPressed = true;
             AnimateScale(_originalScale.y * pushFactor, pressDuration, pressEase);
             G.feel.PlayBtn();
@@ -50,6 +52,8 @@ namespace _Game.Crime
 
         private void OnMouseUp()
         {
+            if(G.RunState.isBlocked) return;
+
             if (!_isPressed) return;
             _isPressed = false;
             AnimateScale(_originalScale.y, releaseDuration, releaseEase);

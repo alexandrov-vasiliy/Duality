@@ -27,11 +27,12 @@ namespace _Game
             G.ProgressTracker = FindFirstObjectByType<GameProgressTracker>();
             G.BribeEvent = FindFirstObjectByType<BribeEvent>();
             G.LeverSwitch = FindFirstObjectByType<LeverSwitch>();
+            G.Micro = FindFirstObjectByType<Micro>();
             
             DontDestroyOnLoad(gameObject);      
         }
 
-        private void OnDestroy()     
+        /*private void OnDestroy()     
         {
             G.ui   = null;
             G.Main = null;
@@ -47,7 +48,7 @@ namespace _Game
             G.ProgressTracker = null;
             G.BribeEvent = null;
             G.LeverSwitch = null;
-        }
+        }*/
     }
 
 }

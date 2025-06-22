@@ -6,11 +6,19 @@ namespace _Game.Family
     using System;
     using UnityEngine;
 
+    public enum FamilyMemberId
+    {
+        Son,
+        Wife,
+        Daughter,
+    }
+
     namespace ExecutionerSim.Core
     {
         [Serializable]
         public class FamilyMemeber
         {
+            public FamilyMemberId id;
             public string name;
             public int health;
         }
@@ -53,7 +61,7 @@ namespace _Game.Family
             {
                 foreach (var familyMemeber in damage)
                 {
-                    var member = _status.members.Find((member) => member.name == familyMemeber.name);
+                    var member = _status.members.Find((member) => member.id == familyMemeber.id);
                     member.health -= familyMemeber.health;
                 }
                 Dispatch();
@@ -62,7 +70,7 @@ namespace _Game.Family
 
             public void Heal(string memberName)
             {
-                if (_status.Money <= medicinePriceValue)
+                if (_status.Money < medicinePriceValue)
                 {
                     return;
                 }

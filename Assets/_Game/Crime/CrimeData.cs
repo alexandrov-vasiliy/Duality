@@ -26,7 +26,8 @@ namespace _Game.Crime
     {
         public PersonProfile Subject;
 
-        [TextArea] public string CrimeDescription;
+        [TextArea(5, 35)]
+        public string CrimeDescription;
 
         public List<GameObject> EvidenceModels = new List<GameObject>();
     }

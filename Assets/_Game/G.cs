@@ -29,5 +29,7 @@ namespace _Game
 
         public static BribeEvent BribeEvent;
         public static LeverSwitch LeverSwitch;
+
+        public static Micro Micro;
     }
 }

@@ -196,7 +196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I know about you wife,don't kill, I pay you
+  m_text: Don't kill me, I'll pay.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4213c9f234b73344aac191672411f580, type: 2}
   m_sharedMaterial: {fileID: -5175705233742930001, guid: 4213c9f234b73344aac191672411f580, type: 2}
@@ -293,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 8558916426152822397}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7459094, y: 0.000000014901158, z: 0.00000005960463, w: 0.6660474}
-  m_LocalPosition: {x: -0, y: 3.64, z: 0.35}
+  m_LocalPosition: {x: -0, y: 4.725, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -312,7 +312,7 @@ Light:
   m_Color: {r: 0.8792453, g: 0.83021504, b: 0.389854, a: 1}
   m_Intensity: 1
   m_Range: 8.15
-  m_SpotAngle: 43.5
+  m_SpotAngle: 64.073975
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -566,10 +566,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.698
       objectReference: {fileID: 0}
+    - target: {fileID: -5189799888330957831, guid: 841646c9897431449b266c06cf3ee740, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dbc9871c288d4f479a667044001b8e0, type: 2}
+    - target: {fileID: -59943791241736621, guid: 841646c9897431449b266c06cf3ee740, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c50396c11b1a344183a514b8f7445e6, type: 2}
     - target: {fileID: 640641089322208583, guid: 841646c9897431449b266c06cf3ee740, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: cf901c89eebd03947b246ed1b30c0610, type: 2}
+      objectReference: {fileID: 2100000, guid: 1dbc9871c288d4f479a667044001b8e0, type: 2}
     - target: {fileID: 919132149155446097, guid: 841646c9897431449b266c06cf3ee740, type: 3}
       propertyPath: m_Name
       value: Envelope

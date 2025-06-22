@@ -38,6 +38,7 @@ namespace _Game.Handle
         /// <summary>Установить конкретное состояние.</summary>
         public void SetState(bool turnOn)
         {
+            if(G.RunState.isBlocked) return;
             if (isOn == turnOn) return;
             isOn = turnOn;
 

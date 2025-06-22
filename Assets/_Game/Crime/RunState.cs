@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
+using _Game.Family.ExecutionerSim.Core;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Game.Crime
 {
@@ -10,35 +12,69 @@ namespace _Game.Crime
         public AudioClip AgonyEnd;
         public AudioClip LaunchClip;
 
-        public int reward = 20;
+        public int rewardExecute = 20;
         public int rewardMercy = 10;
-        
+
+        private bool choiceAccept = false;
+        public bool isBlocked = false;
+
+        private void OnEnable()
+        {
+            G.crimeInitializator.newDay += OnNewDay;
+        }
+
+        private void OnDisable()
+        {
+            G.crimeInitializator.newDay -= OnNewDay;
+
+        }
+
+        private void OnNewDay()
+        {
+            choiceAccept = false;
+        }
+
         public void StartMercy()
         {
+            if(isBlocked) return;
+
+            if(choiceAccept) return;
+            
             StartCoroutine(Mercy());
         }
 
         public void StartExecute()
         {
+            if(isBlocked) return;
+            
+            if(choiceAccept) return;
+
             StartCoroutine(Execute());
         }
 
         public IEnumerator Mercy()
         {
+            G.Micro.HandleNewDay();
+
+            choiceAccept = true;
             G.Door.Close();
 
             G.ProgressTracker.RecordDecision(G.crimeInitializator.currentDay, PlayerDecision.Mercy);
             yield return new WaitForSeconds(1);
             G.feel.PlayFree();
             yield return new WaitForSeconds(0.3f);
-
-            yield return WaitDayResultScreen(G.crimeInitializator.currentDay.consequences.mercyText);
-            yield return WaitFamilyScreen(rewardMercy);
+            
+            int rewardSum = rewardMercy + G.crimeInitializator.currentDay.mercyRev;
+            yield return WaitDayResultScreen(G.crimeInitializator.currentDay.consequences.mercyText, Verdict.Pardon, rewardSum);
+            yield return WaitFamilyScreen(rewardSum);
             
         }
 
         public IEnumerator Execute()
         {
+            choiceAccept = true;
+            G.Micro.HandleNewDay();
+            
             G.Main.sfxAudio.PlayOneShot(LaunchClip);
 
             G.Door.Close();
@@ -52,18 +88,17 @@ namespace _Game.Crime
 
             G.LeverSwitch.SetState(false);
             G.Main.sfxAudio.PlayOneShot(AgonyEnd);
-
-            yield return WaitDayResultScreen(G.crimeInitializator.currentDay.consequences.executeText);
-            yield return WaitFamilyScreen(reward);
+            int rewardSum = rewardExecute + G.crimeInitializator.currentDay.executeRev; 
+            yield return WaitDayResultScreen(G.crimeInitializator.currentDay.consequences.executeText, Verdict.Execute, rewardSum);
+            yield return WaitFamilyScreen(rewardSum);
         }
 
-        public IEnumerator WaitDayResultScreen(string choiceText)
+        public IEnumerator WaitDayResultScreen(string choiceText, Verdict verdict, int reward)
         {
             G.FolderPickup.gameObject.SetActive(false);
             G.ui.FadeOpen();
             yield return new WaitForSeconds(G.ui.fadeDur);
-            G.DayEndView.Open();
-            G.DayEndView.choiceText.ShowText(choiceText);
+            G.DayEndView.Open(verdict, reward, choiceText);
 
             yield return new WaitUntil(() => G.DayEndView.continuePressed);
             G.DayEndView.Close();

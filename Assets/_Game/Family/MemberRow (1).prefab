@@ -295,7 +295,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 207.874, y: 85}
+  m_SizeDelta: {x: 333.443, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8991239132760749758
 CanvasRenderer:
@@ -496,10 +496,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5023665378952995728}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 166.5, y: 0}
+  m_SizeDelta: {x: 333, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8372930075114234403
 CanvasRenderer:
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buy medicines
+  m_text: Buy medicines 20$
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5727f47917a862b44bf0645fd420ba3f, type: 2}
   m_sharedMaterial: {fileID: -437466684133121005, guid: 5727f47917a862b44bf0645fd420ba3f, type: 2}
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 71.77
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

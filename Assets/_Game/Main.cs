@@ -8,6 +8,7 @@ namespace _Game
         private void Start()
         {
             G.ui.HideLaws();
+            G.ui.StartTutorial();
             G.DayEndView.Close();
             G.FamilyView.Close();
             G.crimeInitializator.InitDay();

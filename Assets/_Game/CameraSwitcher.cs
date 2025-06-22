@@ -17,6 +17,7 @@ namespace _Game
 
         void Update()
         {
+            if(G.ui.lawPanelAccess == false) return;
             if (!Input.GetKeyDown(KeyCode.Space)) return;
             
             if (showLows)

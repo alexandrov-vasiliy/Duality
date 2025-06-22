@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
+  m_Name: Day5_Father
+  m_EditorClassIdentifier: 
+  additionalEvent: 0
+  lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>March
+    9, 2002</size></b>  \r\n<i>\u201CFuture Ration\u201D experiment fails.</i>\r\n\r\nTesting
+    of nutrient tablets made from processed insects has been suspended  \r\nafter
+    multiple participants reported hallucinations \u2014 described as \u201Cmoving
+    shadows.\u201D\r\n\r\nSurviving test subjects have been placed on a reinforced
+    food program  \r\nwith increased medical supervision.\r\n"
+  crime:
+    Subject:
+      FullName: George Adams
+      Age: 58
+      Gender: 0
+      BodyType: Average
+      ModelMaterial: {fileID: 2100000, guid: 405b3755fa543654f96289b72e15d111, type: 2}
+    CrimeDescription: "Accepted bribes during construction approvals; a collapsed
+      residential building resulted in 12 deaths.\r\n\r\n\u2022 Expert analysis:
+      concrete quality below standard  \r\n\u2022 The purchased apartment was registered
+      under his wife's name\r\n\u2022 Forged inspection reports  \r\n\u2022 Contractor\u2019s
+      messages discussing kickbacks\n"
+    EvidenceModels: []
+  consequences:
+    executeText: "With every death, a part of me dies too.  \r\nWhether that\u2019s
+      good or bad... I\u2019m no longer sure."
+    mercyText: "Another corruption scandal \u2014 or something far more personal?"
+  endText:
+    executeText: 
+    mercyText: 
+  DamageDatas:
+  - id: 0
+    name: Son
+    health: 50
+  Dialogues:
+  - text: ' What were your motives? '
+    Speaker: 1
+  - text: "Can I at least know the name of the man who\u2019s going to kill me?  "
+    Speaker: 0
+  - text: "But money won\u2019t help you in hell."
+    Speaker: 1
+  - text: ' Would your first name happen to be... Jake?'
+    Speaker: 0
+  - text: "<b>You (internal monologue):</b> I pray this is just coincidence.  \r\nThat
+      we only share a last name.  \r\nThat he's not my long-lost father."
+    Speaker: 1

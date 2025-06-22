@@ -9,6 +9,7 @@ namespace _Game
         [SerializeField] private MMF_Player closeDoor;
         [SerializeField] private MMF_Player mercyBtn;
         [SerializeField] private MMF_Player free;
+        [SerializeField] private MMF_Player micro;
 
         public void PlayOpenDoor()
         {
@@ -28,6 +29,11 @@ namespace _Game
         public void PlayFree()
         {
             free.PlayFeedbacks();
+        }
+
+        public void PlayMicro()
+        {
+            micro.PlayFeedbacks();
         }
     
     }

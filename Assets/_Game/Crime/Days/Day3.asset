@@ -12,31 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day3
   m_EditorClassIdentifier: 
-  lawsText: 
+  additionalEvent: 1
+  lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>February
+    26, 2002</size></b>  \r\n<i>Time capsule from the past discovered.</i>\r\n\r\nA
+    time capsule was found in the ruins of a destroyed city.  \r\nInside were messages
+    and recordings from people who lived before the catastrophe.\r\n\r\nThe contents
+    have been classified.\r\n"
   crime:
     Subject:
-      FullName: Chog Ching
-      Age: 67
+      FullName: Julian Kornell
+      Age: 54
       Gender: 0
-      BodyType: Ching Chong
+      BodyType: "\u041F\u043E\u043B\u043D\u043E\u0435"
       ModelMaterial: {fileID: 2100000, guid: c89f5daa40673204d8403d1cfa7da190, type: 2}
-    CrimeDescription: "\u041F\u0440\u043E\u0434\u0430\u0432\u0430\u043B \u043D\u0430\u0440\u043A\u043E\u0442\u0438\u043A\u0438"
-    InvestigationNotes: "\u0412 \u0441\u0443\u043C\u043A\u0430\u0445 \u043D\u0430\u0439\u0434\u0435\u043D\u044B
-      \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430 \u043F\u043E \u044D\u043A\u0441\u043F\u0435\u0440\u0442\u0438\u0437\u0435 "
-    ProofSummaries: 
-    EvidenceSummary: 
-    EvidenceModels:
-    - {fileID: -927199367670048503, guid: 29093db279d5d0540b9a25a9d7355362, type: 3}
+    CrimeDescription: "Stole classified data and handed it over to enemies of the
+      state.\r\n\r\r\n\u2022 Surveillance cameras recorded him removing a sealed
+      container.  \r\n\u2022 Within three days, 2.3 million rubles were transferred
+      to his account from an offshore source.\r"
+    EvidenceModels: []
   consequences:
-    executeText: "\u0420\u0430\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435
-      \u0436\u0443\u0440\u043D\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u043E
-      \u0447\u0442\u043E \u043E\u043D \u0431\u044B\u043B \u043D\u0435\u0432\u0438\u043D\u043E\u0432\u0435\u043D"
-    mercyText: "\u0420\u0430\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435
-      \u0436\u0443\u0440\u043D\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u043E
-      \u0447\u0442\u043E \u043E\u043D \u0431\u044B\u043B \u043D\u0435\u0432\u0438\u043D\u043E\u0432\u0435\u043D"
+    executeText: "Today I enjoyed the execution.\nWhen that fat bastard's body started
+      convulsing from the electricity\u2026\nWeird."
+    mercyText: "Corruption, corruption, and more corruption.\nSlip some cash into
+      the right hands \u2014 and you walk free."
   endText:
     executeText: 
     mercyText: 
   DamageDatas:
-  - name: Son
+  - id: 1
+    name: 
     health: 30
+  - id: 0
+    name: 
+    health: 30
+  Dialogues:
+  - text: What were your motives?
+    Speaker: 1
+  - text: "Money doesn\u2019t stink, boy."
+    Speaker: 0
+  - text: "But money won\u2019t help you in hell."
+    Speaker: 1
+  - text: Wait. You can kill me any second.
+    Speaker: 0
+  - text: What are you offering?
+    Speaker: 1
+  - text: Open the envelope.
+    Speaker: 0

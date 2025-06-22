@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
+  m_Name: Day0
+  m_EditorClassIdentifier: 
+  mercyRev: 10
+  executeRev: 0
+  additionalEvent: 0
+  lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>February
+    5, 2002</size></b>  \r\n<i>Seven years since the virus outbreak.</i>\r\n\r\nToday,
+    people all over the country remember those who died when the virus changed everything. 
+    \r\nFamilies light candles, short stories, and think about the ones they lost.\r\n\r\nIn
+    respect for the day, the government has lifted the curfew \u2014 just for tonight."
+  crime:
+    Subject:
+      FullName: 'Murat  '
+      Age: 16
+      Gender: 0
+      BodyType: Sturdy
+      ModelMaterial: {fileID: 2100000, guid: b26b3589c1d95cc4a8416ed5afc59691, type: 2}
+    CrimeDescription: "Illegal watermelon street vending.  \r\nPossession of substances
+      suspected to be narcotics.\n\r\n\u2022 Investigators approached to check his
+      vending permit and discovered three packets containing a substance believed
+      to be tobacco-based narcotics.  \r"
+    EvidenceModels: []
+  consequences:
+    executeText: "You acted in accordance with the law.\nYou executed him. That\u2019s
+      your duty."
+    mercyText: "You couldn\u2019t bring yourself to execute him \u2014\nso you sent
+      him back to his homeland.\nYou\u2019ll be paid less, but they\u2019ll let you
+      keep your job."
+  endText:
+    executeText: 
+    mercyText: 
+  DamageDatas:
+  - id: 1
+    name: 
+    health: 15
+  - id: 0
+    name: 
+    health: 15
+  - id: 2
+    name: 
+    health: 15
+  Dialogues:
+  - text: Can you explain your actions?
+    Speaker: 1
+  - text: "I do nothing bad, brother\u2026 please, no kill, please."
+    Speaker: 0
+  - text: 'Under the new laws, selling and using tobacco is a capital offense.
+
+      You
+      will be executed.'
+    Speaker: 1
+  - text: " Please, I come from far away only to make little money... no know law
+      here\u2026 please, I beg you..."
+    Speaker: 0

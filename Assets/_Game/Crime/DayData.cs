@@ -16,8 +16,10 @@ namespace _Game.Crime
     [CreateAssetMenu(fileName = "CrimeData", menuName = "Crime/DayData", order = 0)]
     public class DayData : ScriptableObject
     {
+        public int mercyRev = 0;
+        public int executeRev = 0;
         public DayEvent additionalEvent;
-        [TextArea] public string lawsText;
+        [TextArea(5, 20)] public string lawsText;
         public CaseFile crime;
         public ChoiceText consequences;
         public ChoiceText endText;
@@ -30,8 +32,8 @@ namespace _Game.Crime
     [Serializable]
     public class ChoiceText
     {
-        [TextArea] public string executeText;
-        [TextArea] public string mercyText;
+        [TextArea(5, 20)] public string executeText;
+        [TextArea(5, 20)] public string mercyText;
     }
 
     public enum Speaker

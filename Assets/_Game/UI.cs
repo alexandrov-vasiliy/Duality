@@ -56,17 +56,17 @@ namespace _Game
         {
             G.RunState.isBlocked = true;
             yield return ShowAndWait(
-              "Вы пришли на работу  палача, не самая лучшая работа но семью кормть надо");
+              "You showed up for your job as the executioner. Not the best kind of work — but someone has to feed the family.");
             yield return ShowAndWait(
-              "На столе лежит досье <pend>обвиняемого</pend>");
+              "There’s a case file on the table — it belongs to <pend>the accused</pend>.");
             yield return ShowAndWait(
-              "Рычаг <shake>пустить ток</shake>, Красная кнопка отпустить подсудимого");
+              "The lever — <shake>activate current</shake>. The red button — release the accused");
             yield return ShowAndWait(
-                "Ты можешь поговорить со смертником, используй микропон");            
+                "You may speak with the condemned. Use the microphone.");            
             yield return ShowAndWait(
-                "<incr>SPACE, посмотреть новости</incr>");
+                "<incr>SPACE, view the news</incr>");
             lawPanelAccess = true;
-            TutorialPanel.transform.DOMoveY( TutorialPanel.transform.position.y + 300, 0.3f);
+            TutorialPanel.transform.DOMoveY( TutorialPanel.transform.position.y + 1500, 0.3f);
             G.RunState.isBlocked = false;
 
         }

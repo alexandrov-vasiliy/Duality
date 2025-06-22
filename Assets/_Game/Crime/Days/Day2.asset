@@ -44,10 +44,10 @@ MonoBehaviour:
   DamageDatas:
   - id: 0
     name: 
-    health: 10
+    health: 20
   - id: 2
     name: 
-    health: 10
+    health: 20
   - id: 1
     name: 
     health: 25

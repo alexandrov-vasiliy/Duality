@@ -13,7 +13,7 @@ namespace _Game.Crime
 
         private int currentDayIndex = 0;
         
-        public DayData currentDay => currentDayIndex < Days.Count ? Days[currentDayIndex] : Days[0];
+        public DayData currentDay => currentDayIndex <= Days.Count - 1 ? Days[currentDayIndex] : Days[0];
 
         [SerializeField] private Transform criminalPersonPoint;
         [SerializeField] private Transform evidencePoint;
@@ -38,9 +38,9 @@ namespace _Game.Crime
                 G.BribeEvent.RemoveBribe();
             }
             
-            if (currentDayIndex >= Days.Count)
+            if (currentDayIndex >= Days.Count - 1)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
                 return;
             }
             currentDayIndex++;

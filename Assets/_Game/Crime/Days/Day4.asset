@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day4
   m_EditorClassIdentifier: 
+  mercyRev: 0
+  executeRev: 0
   additionalEvent: 0
   lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>March
     2, 2002</size></b>  \r\n<i>Waiting in line for \"sun hours.\"</i>\r\n\r\nDue
@@ -25,12 +27,9 @@ MonoBehaviour:
       Gender: 1
       BodyType: Average
       ModelMaterial: {fileID: 2100000, guid: da29fece13506a644914e05d4a70d7ab, type: 2}
-    CrimeDescription: "Murder of a man with a kitchen knife.  \r\nThe defendant claims
-      self-defense against domestic violence.\r\r\n\r\r\n\u2022 Police records of
-      two prior domestic disturbance calls  \r\n\u2022 Only the defendant\u2019s
-      fingerprints found on the knife\r\n\r\u2022 Neighbors reported hearing screaming 
-      \r\n\u2022 Forensic report: three stab wounds on the man; fresh bruises observed
-      on the defendant"
+    CrimeDescription: "Murder of a man with a kitchen knife.  \r\r\n\r\r  \r\n\u2022
+      Only the defendant\u2019s fingerprints found on the knife\r\n\r\u2022 Neighbors
+      reported hearing screaming  \r"
     EvidenceModels: []
   consequences:
     executeText: "I don\u2019t even know if it was right to take someone\u2019s life.\nI
@@ -42,7 +41,7 @@ MonoBehaviour:
     executeText: 
     mercyText: 
   DamageDatas:
-  - id: 0
+  - id: 2
     name: 
     health: 30
   - id: 1

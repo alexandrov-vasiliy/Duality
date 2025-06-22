@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day3
   m_EditorClassIdentifier: 
+  mercyRev: 0
+  executeRev: 0
   additionalEvent: 1
   lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>February
     26, 2002</size></b>  \r\n<i>Time capsule from the past discovered.</i>\r\n\r\nA
@@ -23,7 +25,7 @@ MonoBehaviour:
       FullName: Julian Kornell
       Age: 54
       Gender: 0
-      BodyType: "\u041F\u043E\u043B\u043D\u043E\u0435"
+      BodyType: Fat
       ModelMaterial: {fileID: 2100000, guid: c89f5daa40673204d8403d1cfa7da190, type: 2}
     CrimeDescription: "Stole classified data and handed it over to enemies of the
       state.\r\n\r\r\n\u2022 Surveillance cameras recorded him removing a sealed

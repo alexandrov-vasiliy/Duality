@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day6_CP
   m_EditorClassIdentifier: 
+  mercyRev: 100
+  executeRev: 0
   additionalEvent: 1
   lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>March
     16, 2002</size></b>  \r\n<i>Unidentified object discovered.</i>\r\n\r\nUnlabeled
@@ -31,9 +33,13 @@ MonoBehaviour:
       a studio employee"
     EvidenceModels: []
   consequences:
-    executeText: "With every death, a part of me dies too.  \r\nWhether that\u2019s
-      good or bad... I\u2019m no longer sure."
-    mercyText: "Another corruption scandal \u2014 or something far more personal?"
+    executeText: "He threatened my family.  \r\nI had no choice\u2026 right?"
+    mercyText: 'A pedophile walks free.
+
+      What possible excuse could there be
+      for this?
+
+      Are there no sane people left in the justice system?'
   endText:
     executeText: "He threatened my family.  \r\nI had no choice\u2026"
     mercyText: 'News Report:
@@ -48,10 +54,10 @@ MonoBehaviour:
   DamageDatas:
   - id: 2
     name: 
-    health: 40
+    health: 20
   - id: 0
     name: 
-    health: 40
+    health: 20
   Dialogues:
   - text: 'What were your motives?  '
     Speaker: 1

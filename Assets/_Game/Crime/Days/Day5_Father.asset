@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ef22c38a745bf9444e60f247a2140, type: 3}
   m_Name: Day5_Father
   m_EditorClassIdentifier: 
+  mercyRev: 0
+  executeRev: 0
   additionalEvent: 0
   lawsText: "<b><size=130%><color=#B00000>News Report</color></size></b>\r\n<b><size=110%>March
     9, 2002</size></b>  \r\n<i>\u201CFuture Ration\u201D experiment fails.</i>\r\n\r\nTesting
@@ -29,8 +31,7 @@ MonoBehaviour:
     CrimeDescription: "Accepted bribes during construction approvals; a collapsed
       residential building resulted in 12 deaths.\r\n\r\n\u2022 Expert analysis:
       concrete quality below standard  \r\n\u2022 The purchased apartment was registered
-      under his wife's name\r\n\u2022 Forged inspection reports  \r\n\u2022 Contractor\u2019s
-      messages discussing kickbacks\n"
+      under his wife's name\r"
     EvidenceModels: []
   consequences:
     executeText: "With every death, a part of me dies too.  \r\nWhether that\u2019s
@@ -42,7 +43,10 @@ MonoBehaviour:
   DamageDatas:
   - id: 0
     name: Son
-    health: 50
+    health: 40
+  - id: 2
+    name: Son
+    health: 40
   Dialogues:
   - text: ' What were your motives? '
     Speaker: 1
